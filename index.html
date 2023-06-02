@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shuma Mugii - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Shuma Mugii
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="beauty.jpg" class="profile_image" width=300px height=300px/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Shuma Mugii! <img src="wave.png" width="60px"/>
+          </h1>
+          <p>
+            Here, you will find a collection of my passion projects, professional endeavors, and creative solutions that showcase my expertise in building robust and user-centric web applications. With a keen eye for design, meticulous attention to detail, and a comprehensive understanding of the entire development stack, I strive to create seamless experiences that not only meet client needs but also push the boundaries of what is possible in the digital realm. Join me on this journey as we explore the power of code and bring ideas to life, one line at a time.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="tensorflow.png"/>
+            <h6>TensorFlow</h6>
+            <p>1 year experience</p>
+          </div>
+
+        <div class="skill">
+          <img src="python.jfif"/>
+          <h6>Python</h6>
+          <p>1 year experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="pytorch.png"/>
+            <h6>PyTorch</h6>
+            <p>1 years experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>MNIST Dataset</h3>
+            <ul>
+              <li>Created a model using PyTorch to identify numbers from a large dataset of handwritten numbers provided by the MNIST Database.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Slot game</h3>
+            <ul>
+              <li>Created a fully functional simulation slot game using Python</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Cryptocurrency Predictor</h3>
+            <ul>
+              <li>Created a program to scrape information from live cryptocurrency websites and use AI to make predictions.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Shuma is an exceptionally talented full stack developer with a remarkable ability to adapt to new technologies. His strong problem-solving skills and attention to detail make him a valuable asset to any development team. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Shuma has been an absolute delight. His unwavering passion for full stack development is evident in his unwavering commitment to staying up-to-date with the latest technologies and industry trends.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Shuma is an exceptional full stack developer with a sharp intellect and an unparalleled work ethic. His attention to detail and analytical skills make him a standout talent in the field of web development. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
